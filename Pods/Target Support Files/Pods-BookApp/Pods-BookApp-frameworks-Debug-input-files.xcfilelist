@@ -1,4 +1,5 @@
 ${PODS_ROOT}/Target Support Files/Pods-BookApp/Pods-BookApp-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/CodeScanner/CodeScanner.framework
+${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework
 ${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework
 ${BUILT_PRODUCTS_DIR}/SwiftyXMLParser/SwiftyXMLParser.framework

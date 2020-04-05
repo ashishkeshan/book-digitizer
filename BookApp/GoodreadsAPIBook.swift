@@ -1,5 +1,5 @@
 //
-//  Book.swift
+//  GoodreadsAPIBook.swift
 //  BookApp
 //
 //  Created by Ashish Keshan on 4/4/20.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class Book {
+public class GoodreadsAPIBook {
 
     var author: String!
     var title: String!

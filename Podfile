@@ -9,5 +9,6 @@ target 'BookApp' do
   pod "CodeScanner"
   pod 'SwiftyJSON'
   pod "SwiftyXMLParser", :git => 'https://github.com/yahoojapan/SwiftyXMLParser.git'
+  pod 'IQKeyboardManagerSwift'
 
 end

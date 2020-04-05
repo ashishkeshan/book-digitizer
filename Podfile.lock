@@ -1,16 +1,19 @@
 PODS:
   - CodeScanner (1.7.0)
+  - IQKeyboardManagerSwift (6.5.4)
   - SwiftyJSON (5.0.0)
   - SwiftyXMLParser (5.1.0)
 
 DEPENDENCIES:
   - CodeScanner
+  - IQKeyboardManagerSwift
   - SwiftyJSON
   - SwiftyXMLParser (from `https://github.com/yahoojapan/SwiftyXMLParser.git`)
 
 SPEC REPOS:
   trunk:
     - CodeScanner
+    - IQKeyboardManagerSwift
     - SwiftyJSON
 
 EXTERNAL SOURCES:
@@ -24,9 +27,10 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   CodeScanner: 2d68e41ee9583ed7216f722925432933325ddf2e
+  IQKeyboardManagerSwift: 2dde0fc70110e8eac7ccce2a46fdbec6a850b414
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
   SwiftyXMLParser: 8271497e0a37b5c04b0b167c77b4896e36175a21
 
-PODFILE CHECKSUM: 4027355746c1d64d8136c9843fc621db6950d0d0
+PODFILE CHECKSUM: 96439c64117f2df7dcde558a048df6f4ceed2e5a
 
 COCOAPODS: 1.9.1
