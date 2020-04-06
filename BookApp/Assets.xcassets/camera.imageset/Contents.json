@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "openlibrary-card-2.png",
+      "filename" : "camera-1x.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "openlibrary-card-1.png",
+      "filename" : "camera-2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "openlibrary-card.png",
+      "filename" : "camera-3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

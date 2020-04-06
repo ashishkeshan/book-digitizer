@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "googleBooks-2.jpg",
+      "filename" : "googleBooks-2.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "googleBooks-1.jpg",
+      "filename" : "googleBooks-1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "googleBooks.jpg",
+      "filename" : "googleBooks.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

@@ -7,7 +7,7 @@ class BookAPIPageViewController: UIPageViewController
             self.getGoogleAPIViewController(withIdentifier: "Page1"),
             self.getGoodreadsAPIViewController(withIdentifier: "Page2"),
             self.getOpenLibraryAPIViewController(withIdentifier: "Page3"),
-//            self.getViewController(withIdentifier: "Page4")
+            self.getManualSelectViewController(withIdentifier: "Page4")
         ]
     }()
     
@@ -39,6 +39,13 @@ class BookAPIPageViewController: UIPageViewController
         vc.book = openLibraryBook
         return vc
     }
+    
+    fileprivate func getManualSelectViewController(withIdentifier identifier: String) -> UIViewController
+    {
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: identifier) as! ManualSelectViewController
+        return vc
+    }
+    
     
     override func viewDidLoad()
     {

@@ -33,6 +33,7 @@
 		751A56CD243A91CE006106E9 /* GoogleBookAPIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751A56CC243A91CE006106E9 /* GoogleBookAPIViewController.swift */; };
 		751A56CF243A91D8006106E9 /* GoodreadsAPIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751A56CE243A91D8006106E9 /* GoodreadsAPIViewController.swift */; };
 		751A56D1243A91E5006106E9 /* OpenLibraryAPIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751A56D0243A91E5006106E9 /* OpenLibraryAPIViewController.swift */; };
+		751A56D3243AA4F9006106E9 /* ManualSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751A56D2243AA4F9006106E9 /* ManualSelectViewController.swift */; };
 		75D73937243957260018A89E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D73936243957260018A89E /* AppDelegate.swift */; };
 		75D73939243957260018A89E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D73938243957260018A89E /* SceneDelegate.swift */; };
 		75D7393B243957260018A89E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D7393A243957260018A89E /* ViewController.swift */; };
@@ -73,6 +74,7 @@
 		751A56CC243A91CE006106E9 /* GoogleBookAPIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleBookAPIViewController.swift; sourceTree = "<group>"; };
 		751A56CE243A91D8006106E9 /* GoodreadsAPIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodreadsAPIViewController.swift; sourceTree = "<group>"; };
 		751A56D0243A91E5006106E9 /* OpenLibraryAPIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenLibraryAPIViewController.swift; sourceTree = "<group>"; };
+		751A56D2243AA4F9006106E9 /* ManualSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualSelectViewController.swift; sourceTree = "<group>"; };
 		75D73933243957260018A89E /* BookApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75D73936243957260018A89E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75D73938243957260018A89E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -207,6 +209,7 @@
 				75D73938243957260018A89E /* SceneDelegate.swift */,
 				75D7393A243957260018A89E /* ViewController.swift */,
 				75D7393C243957260018A89E /* Main.storyboard */,
+				751A56D2243AA4F9006106E9 /* ManualSelectViewController.swift */,
 				751A56CC243A91CE006106E9 /* GoogleBookAPIViewController.swift */,
 				751A56CE243A91D8006106E9 /* GoodreadsAPIViewController.swift */,
 				751A56D0243A91E5006106E9 /* OpenLibraryAPIViewController.swift */,
@@ -360,6 +363,7 @@
 				75D73937243957260018A89E /* AppDelegate.swift in Sources */,
 				751A56AB243A6364006106E9 /* BarcodeScannerViewController.swift in Sources */,
 				751A56A6243A6364006106E9 /* NSLayoutConstraint+Extensions.swift in Sources */,
+				751A56D3243AA4F9006106E9 /* ManualSelectViewController.swift in Sources */,
 				751A56A5243A6364006106E9 /* UIView+Extensions.swift in Sources */,
 				751A56C5243A8683006106E9 /* GoodreadsAPIBook.swift in Sources */,
 				751A56AC243A6364006106E9 /* VideoPermissionService.swift in Sources */,
