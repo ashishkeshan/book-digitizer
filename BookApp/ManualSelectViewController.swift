@@ -19,10 +19,44 @@ class ManualSelectViewController: UIViewController, UIImagePickerControllerDeleg
     @IBOutlet weak var genrePickerView: UIPickerView!
     var genreData: [String] = []
     var selectedCategory: String = ""
+    
+    @IBAction func uploadPressed(_ sender: Any) {
+        if bookCoverImageView.image == nil {
+            pushBookData(imageID: "", title: titleTextField.text!, author: authorTextField.text!, category: selectedCategory) { (message) in
+                if message == "success" {
+                    let alert = UIAlertController(title: "Success!", message: "The book was successfully uploaded.", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action) in
+                        self.navigationController?.popToRootViewController(animated: true)
+                    }))
+                    self.present(alert, animated: true, completion: nil)
+                } else {
+                    let alert = UIAlertController(title: "Error!", message: "The book was not uploaded. Please check your connection.", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                    self.present(alert, animated: true, completion: nil)
+                }
+            }
+            self.navigationController?.popToRootViewController(animated: true)
+        } else {
+            handleUpload(image: bookCoverImageView.image!, title: titleTextField.text!, author: authorTextField.text!, category: selectedCategory) { (message) in
+                if message == "success" {
+                    let alert = UIAlertController(title: "Success!", message: "The book was successfully uploaded.", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action) in
+                        self.navigationController?.popToRootViewController(animated: true)
+                    }))
+                    self.present(alert, animated: true, completion: nil)
+                } else {
+                    let alert = UIAlertController(title: "Error!", message: "The book could not be uploaded. Please check your connection.", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                    self.present(alert, animated: true, completion: nil)
+                }
+            }
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         genreData = ["American Literature","Bangla" ,"Contemporary Fiction","Contemporary Non-Fiction" , "Cooking and Baking","Dictionaries 1" ,"Dictionaries 2","Encyclopedias","Health","Hindi Classics","Hindi Contemporary" ,"Hindi Encyclopedias" ,"Marathi","Music and Arts","Nature","Other World Literature" ,"Politics and Economics" ,"Pop Fiction" ,"Progressivism" ,"Russian","Science","Spiritualism","Travel","Young Fiction"]
+        selectedCategory = genreData[0]
         genrePickerView.dataSource = self
         genrePickerView.delegate = self
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
@@ -47,10 +81,6 @@ class ManualSelectViewController: UIViewController, UIImagePickerControllerDeleg
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         selectedCategory = genreData[row]
-    }
-    
-    
-    @IBAction func nextPressed(_ sender: Any) {
     }
     
     

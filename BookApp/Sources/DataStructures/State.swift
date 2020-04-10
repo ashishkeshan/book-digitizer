@@ -12,10 +12,10 @@ enum State {
 
 /// State message provider.
 public struct StateMessageProvider {
-  public var scanningText = localizedString("INFO_DESCRIPTION_TEXT")
-  public var processingText = localizedString("INFO_LOADING_TITLE")
-  public var unathorizedText = localizedString("ASK_FOR_PERMISSION_TEXT")
-  public var notFoundText = localizedString("NO_PRODUCT_ERROR_TITLE")
+  public var scanningText = "Place the barcode within the window to scan. The search will start automatically."
+  public var processingText = "Looking for your book..."
+  public var unathorizedText = "In order to scan barcodes you have to allow camera under your settings."
+  public var notFoundText = "No book found."
 
   func makeText(for state: State) -> String {
     switch state {

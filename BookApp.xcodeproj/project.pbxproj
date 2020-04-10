@@ -34,6 +34,8 @@
 		751A56CF243A91D8006106E9 /* GoodreadsAPIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751A56CE243A91D8006106E9 /* GoodreadsAPIViewController.swift */; };
 		751A56D1243A91E5006106E9 /* OpenLibraryAPIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751A56D0243A91E5006106E9 /* OpenLibraryAPIViewController.swift */; };
 		751A56D3243AA4F9006106E9 /* ManualSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751A56D2243AA4F9006106E9 /* ManualSelectViewController.swift */; };
+		751A56D7243ED4E6006106E9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 751A56D6243ED4E6006106E9 /* GoogleService-Info.plist */; };
+		751A56D9243ED698006106E9 /* BackendConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751A56D8243ED698006106E9 /* BackendConnector.swift */; };
 		75D73937243957260018A89E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D73936243957260018A89E /* AppDelegate.swift */; };
 		75D73939243957260018A89E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D73938243957260018A89E /* SceneDelegate.swift */; };
 		75D7393B243957260018A89E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D7393A243957260018A89E /* ViewController.swift */; };
@@ -75,7 +77,9 @@
 		751A56CE243A91D8006106E9 /* GoodreadsAPIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodreadsAPIViewController.swift; sourceTree = "<group>"; };
 		751A56D0243A91E5006106E9 /* OpenLibraryAPIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenLibraryAPIViewController.swift; sourceTree = "<group>"; };
 		751A56D2243AA4F9006106E9 /* ManualSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualSelectViewController.swift; sourceTree = "<group>"; };
-		75D73933243957260018A89E /* BookApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		751A56D6243ED4E6006106E9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		751A56D8243ED698006106E9 /* BackendConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendConnector.swift; sourceTree = "<group>"; };
+		75D73933243957260018A89E /* Saraswati.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Saraswati.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75D73936243957260018A89E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75D73938243957260018A89E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		75D7393A243957260018A89E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +114,7 @@
 		751A568A243A6364006106E9 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				751A56BB243A64B4006106E9 /* Localization */,
 				751A568B243A6364006106E9 /* DataStructures */,
 				751A568F243A6364006106E9 /* Extensions */,
 				751A5694243A6364006106E9 /* Controllers */,
@@ -175,7 +180,8 @@
 			children = (
 				751A56BC243A64B4006106E9 /* Localizable.strings */,
 			);
-			path = Localization;
+			name = Localization;
+			path = Extensions/Localization;
 			sourceTree = "<group>";
 		};
 		75D7392A243957260018A89E = {
@@ -191,7 +197,7 @@
 		75D73934243957260018A89E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				75D73933243957260018A89E /* BookApp.app */,
+				75D73933243957260018A89E /* Saraswati.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -199,7 +205,6 @@
 		75D73935243957260018A89E /* BookApp */ = {
 			isa = PBXGroup;
 			children = (
-				751A56BB243A64B4006106E9 /* Localization */,
 				751A569C243A6364006106E9 /* Images */,
 				751A568A243A6364006106E9 /* Sources */,
 				751A5665243A6199006106E9 /* GoogleAPIBook.swift */,
@@ -214,8 +219,10 @@
 				751A56CE243A91D8006106E9 /* GoodreadsAPIViewController.swift */,
 				751A56D0243A91E5006106E9 /* OpenLibraryAPIViewController.swift */,
 				751A56C8243A8BC8006106E9 /* BookAPIPageViewController.swift */,
+				751A56D8243ED698006106E9 /* BackendConnector.swift */,
 				75D7393F2439572A0018A89E /* Assets.xcassets */,
 				75D739412439572A0018A89E /* LaunchScreen.storyboard */,
+				751A56D6243ED4E6006106E9 /* GoogleService-Info.plist */,
 				75D739442439572A0018A89E /* Info.plist */,
 			);
 			path = BookApp;
@@ -249,7 +256,7 @@
 			);
 			name = BookApp;
 			productName = BookApp;
-			productReference = 75D73933243957260018A89E /* BookApp.app */;
+			productReference = 75D73933243957260018A89E /* Saraswati.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -297,6 +304,7 @@
 			files = (
 				75D739432439572A0018A89E /* LaunchScreen.storyboard in Resources */,
 				751A56AE243A6364006106E9 /* info@3x.png in Resources */,
+				751A56D7243ED4E6006106E9 /* GoogleService-Info.plist in Resources */,
 				751A56B1243A6364006106E9 /* flashOff@3x.png in Resources */,
 				751A56AF243A6364006106E9 /* flashOn@3x.png in Resources */,
 				75D739402439572A0018A89E /* Assets.xcassets in Resources */,
@@ -375,6 +383,7 @@
 				751A56A2243A6364006106E9 /* TorchMode.swift in Sources */,
 				751A56D1243A91E5006106E9 /* OpenLibraryAPIViewController.swift in Sources */,
 				751A56A4243A6364006106E9 /* UIViewController+Extensions.swift in Sources */,
+				751A56D9243ED698006106E9 /* BackendConnector.swift in Sources */,
 				751A56C7243A86CB006106E9 /* OpenLibraryAPIBook.swift in Sources */,
 				751A56A1243A6364006106E9 /* State.swift in Sources */,
 				751A56A3243A6364006106E9 /* FocusViewType.swift in Sources */,
@@ -543,8 +552,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ashishkeshan.BookApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ashishkeshan.Saraswati;
+				PRODUCT_NAME = Saraswati;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -562,8 +571,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ashishkeshan.BookApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ashishkeshan.Saraswati;
+				PRODUCT_NAME = Saraswati;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

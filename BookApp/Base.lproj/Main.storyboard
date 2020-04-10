@@ -99,7 +99,7 @@
                                 <color key="textColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="o7I-PY-ijq">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noCover" translatesAutoresizingMaskIntoConstraints="NO" id="o7I-PY-ijq">
                                 <rect key="frame" x="112.66666666666669" y="140" width="150" height="250"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="CGc-z0-hVy"/>
@@ -142,6 +142,9 @@
                                 <state key="normal" title="Upload">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="uploadPressed:" destination="T0k-78-5fS" eventType="touchUpInside" id="hyo-pr-1GV"/>
+                                </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3yo-QO-rN8">
                                 <rect key="frame" x="83" y="502" width="292" height="125"/>
@@ -235,7 +238,7 @@
                                 <color key="textColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sMs-ys-dBz">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noCover" translatesAutoresizingMaskIntoConstraints="NO" id="sMs-ys-dBz">
                                 <rect key="frame" x="112.66666666666669" y="140" width="150" height="250"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="25n-Sr-yaT"/>
@@ -278,6 +281,9 @@
                                 <state key="normal" title="Upload">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="uploadPressed:" destination="rwV-74-8mz" eventType="touchUpInside" id="YDp-LL-gU4"/>
+                                </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cg5-Nz-Anu">
                                 <rect key="frame" x="83" y="502" width="292" height="125"/>
@@ -353,7 +359,7 @@
                                 <color key="textColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GIl-QV-uPC">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noCover" translatesAutoresizingMaskIntoConstraints="NO" id="GIl-QV-uPC">
                                 <rect key="frame" x="112.66666666666669" y="140" width="150" height="250"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="RaU-os-bM5"/>
@@ -396,6 +402,9 @@
                                 <state key="normal" title="Upload">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="uploadPressed:" destination="2wo-pN-DiX" eventType="touchUpInside" id="caq-Pt-SV6"/>
+                                </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Kl-o5-pVH">
                                 <rect key="frame" x="83" y="502" width="292" height="125"/>
@@ -489,12 +498,6 @@
                                 <color key="textColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xkcd" translatesAutoresizingMaskIntoConstraints="NO" id="D1D-Di-Keb">
-                                <rect key="frame" x="0.0" y="52" width="375" height="80"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="0Jw-Ul-8DS"/>
-                                </constraints>
-                            </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wr1-h7-oR1">
                                 <rect key="frame" x="81" y="402" width="245" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -516,7 +519,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="nextPressed:" destination="BT5-vX-xJ1" eventType="touchUpInside" id="d6r-Cz-GbI"/>
+                                    <action selector="uploadPressed:" destination="BT5-vX-xJ1" eventType="touchUpInside" id="axw-VX-pYJ"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera" translatesAutoresizingMaskIntoConstraints="NO" id="Vx8-Df-b6C">
@@ -548,9 +551,16 @@
                                 <color key="textColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upload Manually" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7WE-yA-Kn7">
+                                <rect key="frame" x="0.0" y="52" width="375" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="zv5-rT-jle" firstAttribute="top" secondItem="7WE-yA-Kn7" secondAttribute="bottom" constant="45" id="1Zq-X3-6WT"/>
                             <constraint firstItem="3yY-H1-srl" firstAttribute="top" secondItem="wr1-h7-oR1" secondAttribute="bottom" constant="16" id="3KH-Wh-CUh"/>
                             <constraint firstItem="bKj-89-aIr" firstAttribute="leading" secondItem="89W-i2-H5U" secondAttribute="leading" id="5sM-0P-h3y"/>
                             <constraint firstItem="zv5-rT-jle" firstAttribute="centerX" secondItem="sxy-c2-GXH" secondAttribute="centerX" id="7kC-Ex-j97"/>
@@ -563,18 +573,17 @@
                             <constraint firstItem="89W-i2-H5U" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="3yY-H1-srl" secondAttribute="trailing" constant="49" id="ME6-ey-2HI"/>
                             <constraint firstItem="73N-EK-I9d" firstAttribute="centerY" secondItem="3yY-H1-srl" secondAttribute="centerY" id="MQu-Br-ggg"/>
                             <constraint firstItem="bXd-O2-xPV" firstAttribute="centerY" secondItem="C8a-X1-fDh" secondAttribute="centerY" id="RXd-E2-f21"/>
-                            <constraint firstItem="D1D-Di-Keb" firstAttribute="leading" secondItem="89W-i2-H5U" secondAttribute="leading" id="TEG-Cs-LOq"/>
                             <constraint firstItem="bKj-89-aIr" firstAttribute="trailing" secondItem="89W-i2-H5U" secondAttribute="trailing" id="U3x-uP-Mwf"/>
+                            <constraint firstItem="7WE-yA-Kn7" firstAttribute="top" secondItem="89W-i2-H5U" secondAttribute="top" constant="8" id="ZmV-7S-XBM"/>
                             <constraint firstItem="bct-Cw-gKL" firstAttribute="centerX" secondItem="zv5-rT-jle" secondAttribute="centerX" id="b1E-eE-81q"/>
-                            <constraint firstItem="D1D-Di-Keb" firstAttribute="trailing" secondItem="89W-i2-H5U" secondAttribute="trailing" id="fbE-c1-v7w"/>
+                            <constraint firstItem="7WE-yA-Kn7" firstAttribute="leading" secondItem="89W-i2-H5U" secondAttribute="leading" id="bQs-06-rEs"/>
+                            <constraint firstItem="89W-i2-H5U" firstAttribute="trailing" secondItem="7WE-yA-Kn7" secondAttribute="trailing" id="fG4-W6-fdk"/>
                             <constraint firstItem="NWo-a5-DGi" firstAttribute="top" secondItem="zv5-rT-jle" secondAttribute="bottom" constant="17" id="hEm-zS-tYB"/>
                             <constraint firstItem="bXd-O2-xPV" firstAttribute="leading" secondItem="89W-i2-H5U" secondAttribute="leading" constant="4" id="jBj-Hi-01s"/>
-                            <constraint firstItem="zv5-rT-jle" firstAttribute="top" secondItem="D1D-Di-Keb" secondAttribute="bottom" constant="8" id="jpj-XX-TEt"/>
                             <constraint firstItem="NWo-a5-DGi" firstAttribute="leading" secondItem="89W-i2-H5U" secondAttribute="leading" constant="8" id="kAe-ME-zOL"/>
                             <constraint firstItem="73N-EK-I9d" firstAttribute="leading" secondItem="89W-i2-H5U" secondAttribute="leading" constant="2" id="ld5-uJ-WLv"/>
                             <constraint firstItem="Vx8-Df-b6C" firstAttribute="centerY" secondItem="zv5-rT-jle" secondAttribute="centerY" id="mG7-sJ-F0h"/>
                             <constraint firstAttribute="trailing" secondItem="C8a-X1-fDh" secondAttribute="trailing" id="mYs-xJ-hca"/>
-                            <constraint firstItem="D1D-Di-Keb" firstAttribute="top" secondItem="89W-i2-H5U" secondAttribute="top" constant="8" id="rFZ-Ba-KBp"/>
                             <constraint firstItem="wr1-h7-oR1" firstAttribute="top" secondItem="zv5-rT-jle" secondAttribute="bottom" constant="12" id="vcQ-1X-XuH"/>
                             <constraint firstItem="bct-Cw-gKL" firstAttribute="top" secondItem="Vx8-Df-b6C" secondAttribute="bottom" constant="8" id="xPj-Ct-GIL"/>
                             <constraint firstItem="3yY-H1-srl" firstAttribute="leading" secondItem="73N-EK-I9d" secondAttribute="trailing" constant="8" id="xbP-gn-3kP"/>
@@ -592,14 +601,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LuQ-dc-y6C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5629" y="27"/>
+            <point key="canvasLocation" x="5628" y="26.600985221674879"/>
         </scene>
     </scenes>
     <resources>
         <image name="camera" width="40" height="40"/>
         <image name="goodReads" width="133.33332824707031" height="133.33332824707031"/>
         <image name="googleBooks" width="400" height="137.66667175292969"/>
-        <image name="openLibrary" width="480" height="240"/>
-        <image name="xkcd" width="246.66667175292969" height="63.333332061767578"/>
+        <image name="noCover" width="85.333335876464844" height="128.33332824707031"/>
+        <image name="openLibrary" width="160" height="80"/>
     </resources>
 </document>

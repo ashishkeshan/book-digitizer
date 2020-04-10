@@ -8,7 +8,6 @@
 
 import UIKit
 import AVFoundation
-import CodeScanner
 import SwiftyJSON
 import SwiftyXMLParser
 

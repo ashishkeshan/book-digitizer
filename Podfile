@@ -6,9 +6,14 @@ target 'BookApp' do
   use_frameworks!
 
   # Pods for BookApp
-  pod "CodeScanner"
   pod 'SwiftyJSON'
   pod "SwiftyXMLParser", :git => 'https://github.com/yahoojapan/SwiftyXMLParser.git'
   pod 'IQKeyboardManagerSwift'
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Firestore'
+  pod 'FirebaseFirestoreSwift'
+  pod 'Firebase/Storage'
+  pod 'FirebaseUI/Storage'
+  pod "SwiftSpinner"
 
 end
