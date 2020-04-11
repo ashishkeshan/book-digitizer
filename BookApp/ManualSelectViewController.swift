@@ -17,7 +17,6 @@ class ManualSelectViewController: UIViewController, UIImagePickerControllerDeleg
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var authorTextField: UITextField!
     @IBOutlet weak var genrePickerView: UIPickerView!
-    var genreData: [String] = []
     var selectedCategory: String = ""
     
     @IBAction func uploadPressed(_ sender: Any) {
@@ -55,7 +54,6 @@ class ManualSelectViewController: UIViewController, UIImagePickerControllerDeleg
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        genreData = ["American Literature","Bangla" ,"Contemporary Fiction","Contemporary Non-Fiction" , "Cooking and Baking","Dictionaries 1" ,"Dictionaries 2","Encyclopedias","Health","Hindi Classics","Hindi Contemporary" ,"Hindi Encyclopedias" ,"Marathi","Music and Arts","Nature","Other World Literature" ,"Politics and Economics" ,"Pop Fiction" ,"Progressivism" ,"Russian","Science","Spiritualism","Travel","Young Fiction"]
         selectedCategory = genreData[0]
         genrePickerView.dataSource = self
         genrePickerView.delegate = self

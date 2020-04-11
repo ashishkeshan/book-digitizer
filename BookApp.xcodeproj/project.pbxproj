@@ -42,6 +42,7 @@
 		75D7393E243957260018A89E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75D7393C243957260018A89E /* Main.storyboard */; };
 		75D739402439572A0018A89E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75D7393F2439572A0018A89E /* Assets.xcassets */; };
 		75D739432439572A0018A89E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75D739412439572A0018A89E /* LaunchScreen.storyboard */; };
+		75F183C4244244DE00F8C74C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F183C3244244DE00F8C74C /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,6 +88,7 @@
 		75D7393F2439572A0018A89E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75D739422439572A0018A89E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		75D739442439572A0018A89E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75F183C3244244DE00F8C74C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		BA0CE17A9D02ECC5C4CE5325 /* Pods-BookApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookApp.debug.xcconfig"; path = "Target Support Files/Pods-BookApp/Pods-BookApp.debug.xcconfig"; sourceTree = "<group>"; };
 		F7229271B93FE6BA2FEF8876 /* Pods_BookApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -214,6 +216,7 @@
 				75D73938243957260018A89E /* SceneDelegate.swift */,
 				75D7393A243957260018A89E /* ViewController.swift */,
 				75D7393C243957260018A89E /* Main.storyboard */,
+				75F183C3244244DE00F8C74C /* Constants.swift */,
 				751A56D2243AA4F9006106E9 /* ManualSelectViewController.swift */,
 				751A56CC243A91CE006106E9 /* GoogleBookAPIViewController.swift */,
 				751A56CE243A91D8006106E9 /* GoodreadsAPIViewController.swift */,
@@ -370,6 +373,7 @@
 				75D7393B243957260018A89E /* ViewController.swift in Sources */,
 				75D73937243957260018A89E /* AppDelegate.swift in Sources */,
 				751A56AB243A6364006106E9 /* BarcodeScannerViewController.swift in Sources */,
+				75F183C4244244DE00F8C74C /* Constants.swift in Sources */,
 				751A56A6243A6364006106E9 /* NSLayoutConstraint+Extensions.swift in Sources */,
 				751A56D3243AA4F9006106E9 /* ManualSelectViewController.swift in Sources */,
 				751A56A5243A6364006106E9 /* UIView+Extensions.swift in Sources */,
@@ -546,13 +550,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 44BCGLCVUS;
+				DEVELOPMENT_TEAM = XMGFBR4W32;
 				INFOPLIST_FILE = BookApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ashishkeshan.Saraswati;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ashishkeshan.Saraswati2;
 				PRODUCT_NAME = Saraswati;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -565,13 +570,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 44BCGLCVUS;
+				DEVELOPMENT_TEAM = XMGFBR4W32;
 				INFOPLIST_FILE = BookApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ashishkeshan.Saraswati;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ashishkeshan.Saraswati2;
 				PRODUCT_NAME = Saraswati;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

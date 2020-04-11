@@ -21,9 +21,11 @@ func pushBookData(imageID: String, title: String, author: String, category: Stri
         "title": title,
         "author": author,
         "category": category,
+        "location": locationGenreMap[category]!,
         "imageID": imageID
     ]) { err in
         if let err = err {
+            print(err.localizedDescription)
             completion("failure")
         } else {
             completion("success")
@@ -40,7 +42,7 @@ func uploadImage(imageID: String, image: UIImage, completion:@escaping (String)-
     let imageRef = storageRef.child("BookCovers/\(imageID)" + ".jpeg")
     imageRef.putData(data!, metadata: nil) { metadata, error in
         guard let metadata = metadata else {
-            print(error?.localizedDescription)
+            print(error?.localizedDescription ?? "unknown error")
             completion("failure")
             return
         }
